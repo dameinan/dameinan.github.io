@@ -1,60 +1,63 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>美楠</title>
+		<title>音乐排行榜</title>
 		<style type="text/css">
-		*{
-			padding: 0px;
-			margin: 0px;
-			float: right;
-		}
-		.meinan{
-			width: 0px;
-			height: 0px;
-			border: 100px solid transparent;;
-			border-top: 100px solid yellow;
-			border-color: #ff0000;
-			border-bottom: 100px solid yellow;
-			border-right: 100px solid yellow;
-			margin: 40px;
-		}
-		.nan{
-			width: 0px;
-			height: 0px;
-			border: 100px solid transparent;;
-			border-top: 100px solid red;
-			border-color: #ff0000;
-			border-bottom: 100px solid green;
-			border-right: 100px solid yellow;
-			border-left: 100px solid blue;
-			margin: 40px;	
-		}
-		.mei{
-			width: 0px;
-			height: 0px;
-			border: 100px solid transparent;;
-			border-top: 100px solid brown;
-			border-color:solid transparent;
-			border-bottom: 100px solid green;		
-			margin: 40px;
-		}
-		.a{
-			width: 0px;
-			height: 0px;
-			border: 100px solid transparent;;
-			border-color:solid transparent;
-			border-bottom: 100px solid black;		
-			margin: 40px;
-		}
+			*{margin: 0;padding: 0;list-style: none;outline: none;}
+.bg{
+	width: 600px;
+	height: 550px;
+	background-image:repeating-radial-gradient(circle at 50% 50%,#333,#000 1%) ;
+	margin: 50px auto;
+	padding: 40px;
+	border-radius: 50%;
+	padding-top:50px ;
+	border: 10px solid #ccc;
+}
+ul{
+	width: 372px;
+	height: 530px;
+	background: #fff;
+	border-radius: 30px;
+	box-shadow: 15px 15px 12px #000;
+	margin: 0 auto;
+}
+ul li{
+	width: 372px;
+	height: 55px;
+	background: #504d58 url(img/yinfu.png)no-repeat 70px 20px;
+	margin-bottom: 2px;
+	font-size: 18px;
+	color: #d6d6d6;
+	line-height: 55px;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+ul .tp{
+	width: 372px;
+	height: 247px;
+	background: #fff;
+	background-image: url(img/yinyue.jpg),url(img/wenzi.jpg);
+	background-repeat: no-repeat;
+	background-position: 87px 16px,99px 192px;
+	border-radius:30px 30px 0 0 ;
+}
+ul .yj{border:0 0 30px 30px;}
+
 		</style>
 	</head>
 	<body>
-		<div class="meinan">
+		<div class="bg">
+			<ul>
+				<li class="tp"></li>
+				<li>vnessa-constance</li>
+				<li>dogffedrd-seeirtit</li>
+				<li>dsieirif-constance</li>
+				<li>wytuu-qeyounted</li>
+				<li class="yj">qurested-conoted</li>
+			</ul>
 		</div>
-	
-	<div class="nan"></div>
-	<div class="mei"></div>
-	<div class="a"></div>
 	</body>
 </html>
