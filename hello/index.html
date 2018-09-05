@@ -4,44 +4,44 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<style type="text/css">
-			*{
-				margin:0px;
-				padding: 0px;
+			p{
+				
+				color: red;
+				text-indent: 2em;
+				line-height: 1.5;
+				text-align: center;
 			}
-			form{
-				width: 300px;
-				height: 200px;
-				background-color: cadetblue;
-				position: absolute;
-			}
+		
 		</style>
+		<script > 
+	        
+			function color(str){
+			 document.body.style.backgroundColor=str;
+			 
+			}
+		</script>
 	</head>
 	<body>
-		<form action="http:\\127.0.0.1\server.php" method="post">
-			<div >
-				<label for="username">用户名</label>
-				<input type="text" name="username" id="username" value=""/>
-				<input type="radio" name="sex" checked="checked" />男
-				<input type="radio" name="sex">女<br /> <br/>
-				<input type="reset" />
-				<input type=" button" value="普通按钮" />
-				<input type="image" src="" />
-				<input type="hidden" />
-				<input type="file" />
-				<input type="url" />
-				日期：<input type="date" />
-				搜索：<input type="search" name="seac" />
-			</div>
-			<div >
-				
-				<label for="pwd">密&nbsp;&nbsp;&nbsp;码</label> 
-				<input type="text" name="pwd" id="pwd" value="" />
-			</div>
-			<div >
-				<label for="e_mail">邮&nbsp;&nbsp;&nbsp;箱</label>
-			    <input type="email" name="e_mail" id="e_mail" value=""/>
-			</div>
-			<input type="submit" value="注册" />
-		</form>
-	</body>
+		<p id="a">美男美男美男美男美男美男美男美男美男美男美男美男美男美男
+			美男美男美男美男美男美男美男美男美男美男美男美男美男美男</p>
+			<input  type="button" value="红色" onclick="color('red')" />
+			<input type="button" value="黄色" onclick="color('yellow')" />
+			<input type="button" value="蓝色" onclick="color('blue')" />
+		    <input type="color" name="" id="chgColor" value="#ff0000" onchange="chgRandomColor()" />
+            <script type="text/javascript">
+              
+	                function chgColor(color){
+		          document.body.style.backgroundColor=color;
+	         }
+	         function chgRandomColor(){
+		      var chgColor=document.getElementById("chgColor");
+		     document.body.style.backgroundColor=chgColor.value;
+	         }
+	         
+			
+             </script>
+			
+	</body>  
 </html>
+
+			
